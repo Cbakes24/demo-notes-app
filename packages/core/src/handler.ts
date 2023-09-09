@@ -1,4 +1,5 @@
-import { Context, APIGatewayProxyEvent } from "aws-lambda";
+import { Context, APIGatewayProxyEvent } from 'aws-lambda';
+
 
 export default function handler(
   lambda: (evt: APIGatewayProxyEvent, context: Context) => Promise<string>
