@@ -2,7 +2,7 @@ import AWS from "aws-sdk";
 import { DocumentClient } from "aws-sdk/lib/dynamodb/document_client";
 
 const client = new AWS.DynamoDB.DocumentClient();
-
+// Here we are creating a convenience object that exposes the DynamoDB client methods that we are going to need in this guide.
 export default {
   get: (params: DocumentClient.GetItemInput) => client.get(params).promise(),
   put: (params: DocumentClient.PutItemInput) => client.put(params).promise(),

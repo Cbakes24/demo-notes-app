@@ -10,6 +10,7 @@ export const main = handler(async (event) => {
   };
 
   if (event.body != null) {
+    // data is just then JSON of the body, if theres a file from S3 it'll include that as well
     data = JSON.parse(event.body);
   }
 
