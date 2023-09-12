@@ -14,6 +14,8 @@
     "vitest": "^0.34.3"
   },
   "dependencies": {
+    "@stripe/react-stripe-js": "^2.2.0",
+    "@stripe/stripe-js": "^2.1.4",
     "aws-lambda": "^1.0.7",
     "aws-sdk": "^2.1453.0",
     "stripe": "^13.5.0",
